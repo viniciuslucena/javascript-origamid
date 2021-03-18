@@ -35,7 +35,7 @@ transacoes.forEach((transacao) => {
 const transportes = 'Carro;Avião;Trem;Onibus;Bicicleta'
 console.log(transportes.split(';'))
 
-const html =
+let html =
     `
     <ul>
         <li><span>Sobre</span></li>
@@ -43,9 +43,9 @@ const html =
         <li><span>Contato</span></li>
     </ul>
 `
-const html = html.split('span').join('a')
+html = html.split('span').join('a')
 
-console.log(htmlJoin)
+console.log(html)
 
 const frase = 'Melhor do ano!'
 console.log(frase.slice(-1))
